@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Destination from "./pages/Destination";
+import styled from "styled-components";
+import NotFound from "./NotFound";
+import Mars from "./pages/planets/Mars";
+import Mercury from "./pages/planets/Mercury";
+import Jupiter from "./pages/planets/Jupiter";
+const Container = styled.div`
+  * {
+    transition: 0.3s all;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: lightcoral;
+      }
+    }
+  }
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/destination/moon" element={<Destination />} />
+          <Route path="/destination/mars" element={<Mars />} />
+          <Route path="/destination/mercury" element={<Mercury />} />
+          <Route path="/destination/jupiter" element={<Jupiter />} />
+          <Route path="/crew" element={<Destination />} />
+          <Route path="/technology" element={<Destination />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 
