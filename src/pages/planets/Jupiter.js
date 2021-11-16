@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Moon from "../../img/planets/moon-bg.png";
+import Moon from "../../img/planets/jupiter-bg.png";
 import LangitMalam from "../../img/langit-malam1.jpg";
 import Planets from "../../data/data.json";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const Left = styled.div`
   }
 `;
 const DetailName = styled.h4`
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 40px;
@@ -124,7 +124,7 @@ export default function Jupiter() {
       <Left>
         <DetailName>
           {" "}
-          <span>04</span> Jupiter
+          <span>01</span> pick your destination
         </DetailName>
         <img src={Moon} alt="moon" />
       </Left>

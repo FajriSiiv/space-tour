@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MarsPlanet from "../../img/planets/mars-bg.png";
+import MarsPlanet from "../../img/planets/mercury-bg.png";
 import LangitMalam from "../../img/langit-malam1.jpg";
 import Planets from "../../data/data.json";
 import { Link } from "react-router-dom";
@@ -32,13 +32,13 @@ const Left = styled.div`
   width: 100%;
   text-align: center;
   & img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     object-fit: contain;
   }
 `;
 const DetailName = styled.h4`
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 40px;
@@ -123,7 +123,7 @@ export default function Mercury() {
       <Left>
         <DetailName>
           {" "}
-          <span>03</span> Mercury
+          <span>01</span> pick your destination
         </DetailName>
         <img src={MarsPlanet} alt="mercury" />
       </Left>

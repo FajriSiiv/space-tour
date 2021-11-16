@@ -8,6 +8,7 @@ import NotFound from "./NotFound";
 import Mars from "./pages/planets/Mars";
 import Mercury from "./pages/planets/Mercury";
 import Jupiter from "./pages/planets/Jupiter";
+import Crew from "./pages/Crew";
 const Container = styled.div`
   * {
     transition: 0.3s all;
@@ -38,7 +39,7 @@ function App() {
           <Route path="/destination/mars" element={<Mars />} />
           <Route path="/destination/mercury" element={<Mercury />} />
           <Route path="/destination/jupiter" element={<Jupiter />} />
-          <Route path="/crew" element={<Destination />} />
+          <Route path="/crew" element={<Crew />} />
           <Route path="/technology" element={<Destination />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

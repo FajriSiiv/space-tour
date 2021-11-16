@@ -38,7 +38,7 @@ const Left = styled.div`
   }
 `;
 const DetailName = styled.h4`
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 40px;
@@ -123,7 +123,7 @@ export default function Mercury() {
       <Left>
         <DetailName>
           {" "}
-          <span>02</span> Mars
+          <span>01</span> pick your destination
         </DetailName>
         <img src={MarsPlanet} alt="mars" />
       </Left>
