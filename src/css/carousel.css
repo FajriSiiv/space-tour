@@ -9,4 +9,13 @@
 }
 .slick-slider .slick-dots li {
   margin: 0 !important;
+  color: white;
+}
+
+.slick-dots li button:before {
+  background: white;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }

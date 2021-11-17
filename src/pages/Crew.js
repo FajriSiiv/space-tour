@@ -95,7 +95,6 @@ export default function Crew() {
   };
 
   const FillData = Database.crew;
-  console.log(FillData);
 
   return (
     <Container>
